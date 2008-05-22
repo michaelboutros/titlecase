@@ -1,0 +1,18 @@
+
+=== Welcome!
+Title Case is a Ruby script that parses a string and turns it into a title following the specifications loosely set by Daring Fireball's John Gruber in this article. After DF's post, Dan Benjamin at Hivelogic challenged the world to come up with a Ruby alternative to John's script, so here it is.
+
+=== Logic
+The script follows some basic rules, and has no hardcoded exceptions. There are two variables that the user is encouraged (and expected) to change. They are "small_words" and "special_characters". The small words variable is self explanatory. The special characters variable contains characters that separate two words where you want both of these words to become capitalized. For example, in the English language, one such character is a hyphen. Words like "command-g" will become "Command-G" instead of just "Command-g". The first and last words of the string are always capitalized, regardless of type, and words already containing capitals (iPhone, MacWorld, etc.) are untouched. Of course, no script can be perfect, so there will be always be a need for occasional correction from a human being. 
+
+=== Examples
+For a bunch of examples, please visit http://www.michaelboutros.com/index.php/projects/titlecase.
+
+=== Usage
+ruby ./titlecase.rb "my amazing title is so amazing"
+=> My Amazing Title Is So Amazing"
+
+=== Contribute
+This script is hosted on Github, so just send me a pull request and there is a good chance whatever you did will get into the main repo. If you don't have a Github account and don't want one, just email any patches to me@michaelboutros.com
+
+Other than that, enjoy, and please use this script for purposes such as cooking, cleaning, and doing the laundry, but please, no nuclear development or anything of the sort. Thanks.
